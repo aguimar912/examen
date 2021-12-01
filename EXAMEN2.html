@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEGUNDO</title>
+    <style>
+      *{
+          font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+      header {
+        border-bottom: 2px dotted #000;
+        box-shadow: gray 10px 10px 5px;
+      }
+
+      header h1{
+          margin-left: 4%;
+         
+      }
+     
+      main p {
+      
+        margin-right: 10%;
+      }
+      main h2{
+        font-size: 40px;
+      }
+      legend{
+          padding: 1%;
+      }
+      fieldset {
+        padding: 2%;
+        margin-right: 60%;
+        border: 2px dotted #000;
+      }
+      fieldset input{
+         padding-right: 60%;
+         margin-bottom: 2%;
+         opacity: 50%;
+      }
+      
+      .color{
+        background-color: #000;
+        color: white;
+      }
+      #enviar{
+        border-radius: 0.5em;
+        padding: 0.5%;
+      }
+      main div{
+          margin-top: 3%;
+          margin-left: 5%;
+          padding: 1%;
+      }
+      #opac{
+          opacity: 60%;
+      }
+      footer {
+        
+        padding: 2%;
+        font-weight: bold;
+        margin-bottom: 0%;
+      }
+      footer p{
+          margin-left: 4%;
+          margin-bottom: 3%;
+      }
+                                    
+      
+    </style>
+  </head>
+  <body>
+    <header><h1>petinder</h1></header>
+    <main>
+      <h2>Hazte socio</h2>
+      <p>
+        Colabora con Petinder haciéndote socio por solo 15 euros mensuales. Con
+        muy poco puedes ayudar mucho a nuestros amigos peludos. Además puedes
+        comprar nuestra exclusiva camiseta por solo 10 euros que se añadirán al
+        primer pago. Rellena el siguiente formulario para unirte a nosotros:
+      </p>
+      <form>
+        <fieldset>
+          <legend class="color">Datos personales</legend>
+          <labelfor="nombre">Nombre *</label><br />
+          <input
+            type="text"
+            id="nombre"
+            required
+            placeholder="Nombre"
+            pattern="[a-zA-ZÑñÁÉÍÓUaéíóúª ]+"
+            autocomplete="on"
+            title="Solo se acepta un nombre correcto"
+          />
+          <br />
+
+          <label for="apel">Apellidos *</label><br />
+          <input
+            type="text"
+            id="apel"
+            required
+            placeholder="Apellidos"
+            pattern="[a-zA-ZÑñÁÉÍÓUaéíóúª ]+"
+            autocomplete="on"
+            title="Solo se acepta un apellido correcto"
+          />
+          <br />
+
+          <label for="correo">Correo electrónico *</label><br />
+          <input
+            type="email"
+            id="correo"
+            required
+            placeholder="Correo electrónico"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            autocomplete="on"
+            title="Solo se acepta un correo electrónico válido"
+          />
+          <br />
+
+          <label for="dni">DNI *</label><br />
+          <input
+            type="text"
+            id="dni"
+            required
+            placeholder="DNI"
+            pattern="[0-9]{8}[a-zA-Z]{1}"
+            autocomplete="on"
+            title="Solo se acepta un DNI válido"
+          />
+          <br />
+
+          <label for="fecha">Fecha de nacimiento:</label><br />
+          <input type="date" id="fecha" />
+
+          <br />
+        </fieldset>
+     
+      <div>
+      <p id="opac">* Todos los campos marcados son obigatorios</p>
+
+      <input type="checkbox" id="verificar" />
+      <label for="verificar"
+        >He leído y acepto la política de privacidad y las condiciones de
+        uso</label
+      ><br /><br>
+
+
+      <input
+      id="enviar"
+       class="color"
+        type="submit"
+        title="boton_enviar"
+        name="boton_enviar"
+        value="Enviar"
+      /></div> </form>
+    </main>
+    <footer  class="color">
+      <p>2021 c Andrea Guillén</p>
+    </footer>
+  </body>
+</html>
